@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Saved Courses - Yukti</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
+    <link rel="stylesheet" href="../mycss/savedcourses.css">
+    <link rel="stylesheet" media="screen and (max-width: 821px)" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Yukti</h2>
+        </div>
+                
+    <div class="right-nav">
+        <ul class="flex">
+            <li><a href="dashboard.php" class="t-white roboto"><?php echo $fullName;?></a></li>
+            <li><a href="allcourses.php" class="t-white roboto">Courses</a></li>
+            <li><a href="savedcourses.html" class="t-white roboto">Saved Courses</a></li> <!-- Updated link to "signup.html" -->
+            <li>
+                <form id="signin-form" action="dashboard.php"  method="post">
+                    <button type="submit" class="search-btn" name="signout"><i class="fa fa-sign-out" aria-hidden="true"></i></button>
+                </form>
+            </li> 
+        </ul>
+    </div>
+    </nav>
+
+    <!-- Title Section -->
+    <section id="title" class="flex s-center">
+        <h1 class="t-center t-white poppins">Your Saved Courses</h1>
+    </section>
+
+    <!-- Saved Courses Section -->
+    <section id="saved-courses">
+        <div class="courses-container flex s-center">
+
+            <!-- Sample Course Item (Repeat this structure for each saved course) -->
+            <div class="courses-item flex f-col s-center items-center">
+                <div class="image-container p-one">
+                    <img src="./Images/weatherApp.png" alt="">
+                </div>
+                <h1 class="t-white poppins">Course 1</h1>
+                <p class="t-white poppins">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="rating">
+                    <p class="rating-text">Rating: <span class="rating-value">4/5</span></p>
+                </div>
+                <div class="buttons flex s-around">
+                    <a href="#" target="_blank" class="btn mx-1 m-top" id="view1">View</a>
+                    <a href="#" class="btn m-top live" id="save1">Save</a>
+                </div>
+            </div>
+
+            <div class="courses-item flex f-col s-center items-center">
+                <div class="image-container p-one">
+                    <img src="./Images/weatherApp.png" alt="">
+                </div>
+                <h1 class="t-white poppins">Course 2</h1>
+                <p class="t-white poppins">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="rating">
+                    <p class="rating-text">Rating: <span class="rating-value">4/5</span></p>
+                </div>
+                <div class="buttons flex s-around">
+                    <a href="#" target="_blank" class="btn mx-1 m-top" id="view1">View</a>
+                    <a href="#" class="btn m-top live" id="save1">Save</a>
+                </div>
+            </div>
+
+            <!-- Repeat the structure above for each saved course -->
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#signup" class="poppinss">Sign up</a></li>
+            <li><a href="#signin" class="poppinss">Sign In</a></li>
+            <li><a href="#courses" class="poppinss">Courses</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome">
+            <a href="https://in.linkedin.com/" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <li><i class="fa-brands fa-youtube"></i></li>
+            </a>
+        </ul>
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">Yukti</span></p>
+    
+    </footer>
+
+    <div id="scroll-top" onclick="scrolltop()">
+        <span><i class="fa-solid fa-arrow-up"></i></span>
+    </div>
+
+</body>
+</html>
